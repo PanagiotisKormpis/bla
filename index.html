@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/icons/dev-icon.png" />
+    <title>Panayiotis Kormpis Resume</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet'
+        type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+
+
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/Chart.js"></script>
+</head>
+
+<body>
+
+    <!-- navigation bar -->
+    <section id="topbar">
+        <div id="topbar-inner">
+            <ul class="nav nav-pills justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#about"><svg width="2em" height="2em"
+                            viewBox="0 0 16 16" class="bi bi-person-fill" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                        </svg></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#resume"><svg width="2em" height="2em" viewBox="0 0 16 16"
+                            class="bi bi-file-earmark-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0H4zm5.5 1.5v2a1 1 0 0 0 1 1h2l-3-3z" />
+                        </svg></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact"><svg width="2em" height="2em" viewBox="0 0 16 16"
+                            class="bi bi-envelope-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z" />
+                        </svg></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                        aria-expanded="false"><svg width="2em" height="2em" viewBox="0 0 16 16"
+                            class="bi bi-keyboard-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M0 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6zm13 .25a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5zM2.25 8a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5A.25.25 0 0 0 3 8.75v-.5A.25.25 0 0 0 2.75 8h-.5zM4 8.25A.25.25 0 0 1 4.25 8h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 4 8.75v-.5zM6.25 8a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5A.25.25 0 0 0 7 8.75v-.5A.25.25 0 0 0 6.75 8h-.5zM8 8.25A.25.25 0 0 1 8.25 8h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 8 8.75v-.5zM13.25 8a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-.5zm0 2a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-.5zm-3-2a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h1.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-1.5zm.75 2.25a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5zM11.25 6a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-.5zM9 6.25A.25.25 0 0 1 9.25 6h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 9 6.75v-.5zM7.25 6a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5A.25.25 0 0 0 8 6.75v-.5A.25.25 0 0 0 7.75 6h-.5zM5 6.25A.25.25 0 0 1 5.25 6h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 5 6.75v-.5zM2.25 6a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h1.5A.25.25 0 0 0 4 6.75v-.5A.25.25 0 0 0 3.75 6h-1.5zM2 10.25a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5zM4.25 10a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h5.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-5.5z" />
+                        </svg></a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="flexbox.html">Flexbox</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Other projects to come</a></li>
+                        <!-- <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Separated link</a></li> -->
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- end of navigation bar -->
+
+    <!-- headerwrap -->
+    <section id="headerwrap">
+        <div class="container">
+            <div class="row centered">
+                <div class="col-lg-12">
+                    <h1>Panayiotis Kormpis</h1>
+                    <h3>Web Developer | info@pkormpis.com</h3>
+                </div>
+                <!--/.col-lg-12 -->
+            </div>
+            <!--/.row -->
+        </div>
+        <!--/.container -->
+    </section>
+    <!--/.#headerwrap -->
+
+
+    <section id="about" name="about"></section>
+    <div id="intro">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-2 col-lg-offset-1">
+                    <h5>Who am I?</h5>
+                </div>
+                <div class="col-lg-6">
+                    <p>I'm a web developer. I'm interested in all kinds of programming, but my major focus is on
+                        front
+                        end developing using HTML, CSS and Javascript. I also have skills in other fields like
+                        programming in C++ and C, developing android
+                        apps or photoshoping</p>
+                </div>
+
+
+            </div>
+            <!--/.row -->
+        </div>
+        <!--/.container -->
+    </div>
+    <!--/ #intro -->
+
+    <section id="resume" name="resume"></section>
+    <!--EDUCATION DESCRIPTION -->
+    <div class="container desc">
+        <div class="row">
+
+            <div class="col-lg-2 col-lg-offset-1">
+                <h5>EDUCATION</h5>
+            </div>
+            <div class="col-lg-5 col-md-6">
+                <p>
+                    <t>Degree in Computer Science</t><br />
+                    Open Hellenic University <br />
+                    <i>4 Years Course 2016 - 2020</i>
+                </p>
+                <p>&nbsp;</p>
+            </div>
+            <div class="col-lg-5 col-md-6 col-lg-offset-3">
+                <p>
+                    <t>Degree of Web Developer</t><br />
+                    IVT AKMI <br />
+                    <i>2 Years Course 2012 - 2014</i>
+                </p>
+                <p>&nbsp;</p>
+            </div>
+
+        </div>
+        <!--/.row -->
+    </div>
+    <!--/.container -->
+
+    <!--SKILLS DESCRIPTION -->
+    <div id="skillswrap">
+        <div class="container">
+            <div class="row">
+                <section class="row">
+                    <div class="col-lg-1">
+                        <h5>SKILLS</h5>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 centered">
+
+                        <canvas id="html" height="130" width="130"></canvas>
+                        <p>HTML/CSS</p>
+                        <br>
+                        <script>
+                            var doughnutData = [
+                                {
+                                    value: 90,
+                                    color: "#1abc9c"
+                                },
+                                {
+                                    value: 10,
+                                    color: "#ecf0f1"
+                                }
+                            ];
+                            var myDoughnut = new Chart(document.getElementById("html").getContext("2d")).Doughnut(doughnutData);
+                        </script>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 centered">
+                        <canvas id="bootstrap" height="130" width="130"></canvas>
+                        <p>Bootstrap</p>
+                        <br>
+                        <script>
+                            var doughnutData = [
+                                {
+                                    value: 90,
+                                    color: "#1abc9c"
+                                },
+                                {
+                                    value: 10,
+                                    color: "#ecf0f1"
+                                }
+                            ];
+                            var myDoughnut = new Chart(document.getElementById("bootstrap").getContext("2d")).Doughnut(doughnutData);
+                        </script>
+                    </div>
+
+
+                    <div class="col-lg-3 col-md-4 col-sm-12 centered">
+                        <canvas id="javascript" height="130" width="130"></canvas>
+                        <p>Javascript</p>
+                        <br>
+                        <script>
+                            var doughnutData = [
+                                {
+                                    value: 75,
+                                    color: "#1abc9c"
+                                },
+                                {
+                                    value: 25,
+                                    color: "#ecf0f1"
+                                }
+                            ];
+                            var myDoughnut = new Chart(document.getElementById("javascript").getContext("2d")).Doughnut(doughnutData);
+                        </script>
+                    </div>
+                </section>
+                <section class="row">
+                    <div class="col-lg-1">
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 centered">
+                        <canvas id="php" height="130" width="130"></canvas>
+                        <p>PHP</p>
+                        <br>
+                        <script>
+                            var doughnutData = [
+                                {
+                                    value: 65,
+                                    color: "#1abc9c"
+                                },
+                                {
+                                    value: 35,
+                                    color: "#ecf0f1"
+                                }
+                            ];
+                            var myDoughnut = new Chart(document.getElementById("php").getContext("2d")).Doughnut(doughnutData);
+                        </script>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 centered">
+                        <canvas id="mysql" height="130" width="130"></canvas>
+                        <p>MySql</p>
+                        <br>
+                        <script>
+                            var doughnutData = [
+                                {
+                                    value: 60,
+                                    color: "#1abc9c"
+                                },
+                                {
+                                    value: 40,
+                                    color: "#ecf0f1"
+                                }
+                            ];
+                            var myDoughnut = new Chart(document.getElementById("mysql").getContext("2d")).Doughnut(doughnutData);
+                        </script>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-12 centered">
+                        <canvas id="photoshop" height="130" width="130"></canvas>
+                        <p>Photoshop</p>
+                        <br>
+                        <script>
+                            var doughnutData = [
+                                {
+                                    value: 60,
+                                    color: "#1abc9c"
+                                },
+                                {
+                                    value: 40,
+                                    color: "#ecf0f1"
+                                }
+                            ];
+                            var myDoughnut = new Chart(document.getElementById("photoshop").getContext("2d")).Doughnut(doughnutData);
+                        </script>
+
+                    </div>
+                </section>
+
+
+            </div>
+            <!--/.row -->
+            <br>
+        </div>
+        <!--/.container -->
+    </div>
+    <!--/ #skillswrap -->
+
+    <section id="contact" name="contact">
+        <!--FOOTER DESCRIPTION -->
+        <div id="footwrap">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-2 col-lg-offset-1">
+                        <h5>CONTACT</h5>
+                    </div>
+                    <div class="col-lg-6">
+                        <p>
+                            <t>Email</t><br />
+                            info@pkormpis.com <br />
+                        </p>
+                        <p>
+                            <t>Address</t><br />
+                            Call me if you want to know
+                        </p>
+                        <p>
+                            <t>Phone</t><br />
+                            +30 6944225794 <br />
+                        </p>
+                    </div>
+                    <div class="col-lg-3">
+                        <p>
+                            <sm>SOCIAL LINKS</sm>
+                        </p>
+                        <p>
+                            <a href="https://www.linkedin.com/in/kormpispanayiotis"><i class="fa fa-linkedin"></i></a>
+                            <a href="https://twitter.com/pkormpis1"><i class="fa fa-twitter"></i></a>
+                        </p>
+                    </div>
+                </div>
+                <!--/.row -->
+            </div>
+            <!--/.container -->
+        </div>
+        <!--/ #footer -->
+    </section>
+
+
+    <div id="c">
+        <div class="container">
+            <p>Created by Panayiotis Kormpis</p>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
